@@ -10,16 +10,22 @@ public class EvenFibonacci
         Scanner s = new Scanner(System.in);
         System.out.println("Enter number:-");
         n = s.nextInt();
+        int count=0;
 
 
-        for(int i=0;i<n;i++)
+        for(int i=0;i<40;i++)
         {
             num3=0;
             num3=num1+num2;
 
             if(num3%2==0)
             {
-                System.out.println(num3);
+                count++;
+
+                if(n==count)
+                {
+                    System.out.println(num3);
+                }
             }
             num1=num2;
             num2=num3;
